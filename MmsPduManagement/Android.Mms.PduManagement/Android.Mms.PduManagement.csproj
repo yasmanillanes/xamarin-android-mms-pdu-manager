@@ -17,7 +17,6 @@
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
-    <JavaDocPaths>Docs/</JavaDocPaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,7 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Docs\package-list" />
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
   </ItemGroup>
@@ -56,94 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedJar Include="Jars\MmsPduManager.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Docs\allclasses-frame.html" />
-    <Content Include="Docs\allclasses-noframe.html" />
-    <Content Include="Docs\com\google\mms\class-use\ContentType.html" />
-    <Content Include="Docs\com\google\mms\class-use\InvalidHeaderValueException.html" />
-    <Content Include="Docs\com\google\mms\class-use\MmsException.html" />
-    <Content Include="Docs\com\google\mms\ContentType.html" />
-    <Content Include="Docs\com\google\mms\InvalidHeaderValueException.html" />
-    <Content Include="Docs\com\google\mms\MmsException.html" />
-    <Content Include="Docs\com\google\mms\package-frame.html" />
-    <Content Include="Docs\com\google\mms\package-summary.html" />
-    <Content Include="Docs\com\google\mms\package-tree.html" />
-    <Content Include="Docs\com\google\mms\package-use.html" />
-    <Content Include="Docs\com\google\mms\pdu\AcknowledgeInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\Base64.html" />
-    <Content Include="Docs\com\google\mms\pdu\CharacterSets.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\AcknowledgeInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\Base64.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\CharacterSets.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\DeliveryInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\EncodedStringValue.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\GenericPdu.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\MultimediaMessagePdu.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\NotificationInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\NotifyRespInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduBody.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduComposer.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduContentTypes.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduHeaders.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduParser.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\PduPart.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\QuotedPrintable.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\ReadOrigInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\ReadRecInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\RetrieveConf.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\SendConf.html" />
-    <Content Include="Docs\com\google\mms\pdu\class-use\SendReq.html" />
-    <Content Include="Docs\com\google\mms\pdu\DeliveryInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\EncodedStringValue.html" />
-    <Content Include="Docs\com\google\mms\pdu\GenericPdu.html" />
-    <Content Include="Docs\com\google\mms\pdu\MultimediaMessagePdu.html" />
-    <Content Include="Docs\com\google\mms\pdu\NotificationInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\NotifyRespInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\package-frame.html" />
-    <Content Include="Docs\com\google\mms\pdu\package-summary.html" />
-    <Content Include="Docs\com\google\mms\pdu\package-tree.html" />
-    <Content Include="Docs\com\google\mms\pdu\package-use.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduBody.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduComposer.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduContentTypes.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduHeaders.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduParser.html" />
-    <Content Include="Docs\com\google\mms\pdu\PduPart.html" />
-    <Content Include="Docs\com\google\mms\pdu\QuotedPrintable.html" />
-    <Content Include="Docs\com\google\mms\pdu\ReadOrigInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\ReadRecInd.html" />
-    <Content Include="Docs\com\google\mms\pdu\RetrieveConf.html" />
-    <Content Include="Docs\com\google\mms\pdu\SendConf.html" />
-    <Content Include="Docs\com\google\mms\pdu\SendReq.html" />
-    <Content Include="Docs\constant-values.html" />
-    <Content Include="Docs\deprecated-list.html" />
-    <Content Include="Docs\help-doc.html" />
-    <Content Include="Docs\index-files\index-1.html" />
-    <Content Include="Docs\index-files\index-10.html" />
-    <Content Include="Docs\index-files\index-11.html" />
-    <Content Include="Docs\index-files\index-12.html" />
-    <Content Include="Docs\index-files\index-13.html" />
-    <Content Include="Docs\index-files\index-14.html" />
-    <Content Include="Docs\index-files\index-15.html" />
-    <Content Include="Docs\index-files\index-16.html" />
-    <Content Include="Docs\index-files\index-17.html" />
-    <Content Include="Docs\index-files\index-18.html" />
-    <Content Include="Docs\index-files\index-2.html" />
-    <Content Include="Docs\index-files\index-3.html" />
-    <Content Include="Docs\index-files\index-4.html" />
-    <Content Include="Docs\index-files\index-5.html" />
-    <Content Include="Docs\index-files\index-6.html" />
-    <Content Include="Docs\index-files\index-7.html" />
-    <Content Include="Docs\index-files\index-8.html" />
-    <Content Include="Docs\index-files\index-9.html" />
-    <Content Include="Docs\index.html" />
-    <Content Include="Docs\overview-frame.html" />
-    <Content Include="Docs\overview-summary.html" />
-    <Content Include="Docs\overview-tree.html" />
-    <Content Include="Docs\script.js" />
-    <Content Include="Docs\serialized-form.html" />
-    <Content Include="Docs\stylesheet.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
