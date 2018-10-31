@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>MMS PDU Manager</title>
+    <authors>Yasmani Llanes</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://opensource.org/licenses/GPL-3.0</licenseUrl>
+    <projectUrl>https://github.com/yasmanillanes/xamarin-android-mms-pdu-manager</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple Xamarin.Android Bindings Library for parsing and composing PDUs for sending and receiving MMS messages.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Xamarin Android SMS MMS PDU Parse Compose</tags>
+  </metadata>
+</package>

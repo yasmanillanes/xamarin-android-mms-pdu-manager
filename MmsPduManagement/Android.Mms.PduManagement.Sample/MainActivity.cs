@@ -46,7 +46,7 @@ namespace Android.Mms.PduManagement.Sample
             PduComposer composer = new PduComposer(sendRequestPdu);
             byte[] pduData = composer.Make();
             int pduDataLength = pduData.Length;
-            Toast.MakeText(this, $"Successfully composed a PDU byte array of size: {pduDataLength.ToString("N")} bytes", ToastLength.Long).Show();
+            Toast.MakeText(this, $"Successfully composed a PDU byte array of size: {pduDataLength.ToString("N0")} bytes", ToastLength.Long).Show();
         }
 
         private void ReadMmsSample()
@@ -66,7 +66,8 @@ namespace Android.Mms.PduManagement.Sample
             // SendMmsSample() method, but normally what we get from MMS service providers
             // are NotificationInd PDUs, RetrieveConf PDUs, and so on.
             SendReq sendRequestPdu = (SendReq)genericPdu;
-            Toast.MakeText(this, $"Successfully parsed a PDU with transaction ID: {sendRequestPdu.GetTransactionId()}", ToastLength.Long).Show();
+            EncodedStringValue transactionId = new EncodedStringValue(sendRequestPdu.GetTransactionId());
+            Toast.MakeText(this, $"Successfully parsed a PDU with transaction ID: {transactionId.String}", ToastLength.Long).Show();
         }
 
     }
